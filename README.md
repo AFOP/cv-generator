@@ -1,67 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><img src="" width="400" alt="Logo Generator - CV"></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About Project
 
-## About Laravel
+This project aims to automatically generate resumes in a simple format. Through specific questions, users are facilitated in creating their first Curriculum Vitae. The application is developed in Laravel, which ensures an efficient and user-friendly experience.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Used technology:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Laravel](https://www.laravel.com).
+- [MySQl](https://www.mysql.com/).
+- [Composer](https://getcomposer.org/).
+- [Php](https://www.php.net/).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Learning Objectives
 
-## Learning Laravel
+- **MVC (Model-View-Controller):
+Laravel follows the MVC design pattern, which divides the application into three main components: the Model (in charge of managing the data and logic of the application), the View (in charge of displaying information to the user) and the Controller (manages the user interactions and application logic).**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Composer:
+Composer is a dependency manager for PHP that Laravel uses to manage its own dependencies and so you can easily add third-party packages to your project.**
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Artisan:
+Artisan is Laravel's command line interface (CLI). It allows you to perform common tasks such as database migration, generating drivers and models, and more.**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Eloquent ORM:
+Laravel uses Eloquent, an ORM (Object-Relational Mapper), to interact with databases. Eloquent allows you to perform database operations using a friendly, object-oriented syntax instead of SQL.**
 
-## Laravel Sponsors
+- **Routes and Drivers:
+Understanding how to define routes and use handlers to handle HTTP requests is essential. Laravel makes it easy to create routes and controllers to manage your application logic.**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Challenges:
 
-### Premium Partners
+- Migrations and Database:
+Understanding how migrations work and working with the database was a challenge at first. Understand Eloquent relationships and how to design and migrate the database effectively.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- PHP versions:
+The challenge was that when working on several Laravel projects I must take into account the PHP versions that I am using for my project.
 
-## Contributing
+## Requirements
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- php: 8.2.14
+- laravel/framework: 10.5.1
+- mysql: 8.0.35
+- composer: 2.5.2
 
-## Code of Conduct
+To know the versions php -v, composer -v and mysql -v
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## How to start
+ - Clone the repository with this command: ´´´git clone https://github.com/AFOP/cv-generator´´´
+ - Go to the repository: ´´´cd cv-generator´´´
+ - start mysql: ´´´sudo service mysql start´´´
+ - run the database mysql: ´´´mysql -u root -p´´´
+ - run laravel: ´´´php artisan migrate´´´
 
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# cv-andres
+# cv-generator
