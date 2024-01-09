@@ -1,4 +1,4 @@
-<p align="center"><img src="" width="400" alt="Logo Generator - CV"></p>
+<p align="center"><img src="/public/logo-cv.jpg" width="400" alt="Logo Generator - CV"></p>
 
 ## About Project
 
