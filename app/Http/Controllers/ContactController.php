@@ -66,4 +66,12 @@ class ContactController extends Controller
         return redirect()->route('contact')->with('success', 'Contacto editado correctamente');
     }
 
+    public function destroy($id)
+    {
+        $experience = Contact::findOrFail($id);
+        $experience->delete();
+
+        return redirect()->back()->with('success', 'El registro ha sido eliminado exitosamente.');
+    }
+
 }

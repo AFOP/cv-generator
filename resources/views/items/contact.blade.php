@@ -75,25 +75,25 @@
         <input type="text" name="skills" id="skills" class="form-control" value="{{ $contact->skills }}">
     </div>
     @if ($contact->experience == "SI")
-        <div class="col-sm-6 form-group">
-            <label for="inputexperience" class="form-label">Experiencia:</label>
-            <select class="form-select" name="experience" aria-label="Default select example" id="inputexperience">
-                <option value="SI" selected>Sí</option>
-                <option value="NO">No</option>
-            </select>
-        </div>
-        <div class="col-sm-6 form-group">
-            <label class="form-label" for="time">Tiempo de experiencia:</label>
-            <input type="text" name="time" id="time" class="form-control" value="{{ $contact->time }}">
-        </div>
+    <div class="col-sm-6 form-group">
+        <label for="inputexperience" class="form-label">Experiencia:</label>
+        <select class="form-select" name="experience" aria-label="Default select example" id="inputexperience">
+            <option value="SI" selected>Sí</option>
+            <option value="NO">No</option>
+        </select>
+    </div>
+    <div class="col-sm-6 form-group">
+        <label class="form-label" for="time">Tiempo de experiencia:</label>
+        <input type="text" name="time" id="time" class="form-control" value="{{ $contact->time }}">
+    </div>
     @else
-        <div class="col-sm-6 form-group">
-            <label for="inputexperience" class="form-label">Experiencia:</label>
-            <select class="form-select" name="experience" aria-label="Default select example" id="inputexperience">
-                <option value="NO" selected>No</option>
-                <option value="SI">Sí</option>
-            </select>
-        </div>
+    <div class="col-sm-6 form-group">
+        <label for="inputexperience" class="form-label">Experiencia:</label>
+        <select class="form-select" name="experience" aria-label="Default select example" id="inputexperience">
+            <option value="NO" selected>No</option>
+            <option value="SI">Sí</option>
+        </select>
+    </div>
     @endif
     <div class="col-sm-6 form-group">
         <label class="form-label" for="firts_name">Nombres:</label>
@@ -121,6 +121,31 @@
     </div>
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Editar</button>
+    </div>
+    <div class="mb-3">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $contact->id }}">Eliminar</button>
+    </div>
+    <!-- Modal para confirmar eliminación -->
+    <div class="modal fade" id="deleteModal{{ $contact->id }}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirmar eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Está seguro que desea eliminar la contacto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <form action="{{ route('contact.destroy', $contact->id) }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </form>
 @endforeach
