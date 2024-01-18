@@ -50,7 +50,7 @@ To know the versions php -v, composer -v and mysql -v
  - Go to the repository: ´´´cd cv-generator´´´
  - start mysql: ´´´sudo service mysql start´´´
  - run the database mysql: ´´´mysql -u root -p´´´
- - run laravel: ´´´php artisan migrate´´´
+ - run laravel: ´´´php artisan serve´´´
 
 ## License
 

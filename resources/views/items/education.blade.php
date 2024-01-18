@@ -48,7 +48,7 @@
         </div>
         <div class="col-sm-6 mb-3" id="inputend">
             <label for="inputend" class="form-label">Fecha de terminación:</label>
-            <input type="date" class="form-control" name="finish" value="0">
+            <input type="date" class="form-control" name="finish">
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Registrar</button>

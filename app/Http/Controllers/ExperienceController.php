@@ -25,7 +25,7 @@ class ExperienceController extends Controller
             'title' => 'required',
             'company' => 'required',
             'Description',
-            'Achievements',
+            'Achievements'  => 'required',
             'address',
             'state',
             'start'=> 'required',
@@ -33,6 +33,7 @@ class ExperienceController extends Controller
         ], [
             'title.required' => 'titulo es obligatorio',
             'company.required' => 'Nombre de la compañia es obligatoria',
+            'Achievements.required' => 'Por lo menos debe digitar un logro',
             'start.required' => 'Fecha de inicio es obligatoria'
         ]);
 

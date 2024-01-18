@@ -6,10 +6,10 @@
     <form action="{{ route('profile') }}" method="POST">
         @csrf
         <input type="hidden" name="title" value="Perfil Profesional">
-        <input type="hidden" name="user" value="{{ $contacts->first()->firts_name }}">
+        <input type="hidden" name="user" value="{{ $contacts->isNotEmpty() ? $contacts->first()->firts_name : '' }}">
         <div class="mb-3">
             <label for="description" class="form-label">Descripción del perfil</label>
-            <textarea class="form-control" name="description" id="description" rows="5">{{ $contacts->first()->iadesc }}</textarea>
+            <textarea class="form-control" name="description" id="description" rows="5">{{ $contacts->isNotEmpty() ? $contacts->first()->iadesc : '' }}</textarea>
         </div>
         <button type="submit" class="btn btn-primary mb-3">Registrar</button>
     </form>
