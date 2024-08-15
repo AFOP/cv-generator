@@ -55,4 +55,7 @@ To know the versions php -v, composer -v and mysql -v
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 # cv-generator
+
+AFOP 2024
